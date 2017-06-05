@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+  <head> 
+    <title>Ubermelon Order Form</title>
+  </head>
+  <body> 
+    <h1>Order!</h1>
+    <h3>Prices</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Prices</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Melon Name</td>
+            <td>Price per lb.</td>
+          </tr>
+          <tr>
+            <td>Watermelon</td>
+            <td>$1.59</td>
+          </tr>
+          <tr>
+            <td>Honeydew</td>
+            <td>$0.99</td>
+          </tr>
+          <tr>
+            <td>Canteloupe</td>
+            <td>$1.29</td>
+          </tr>
+          <tr>
+            <td>Crenshaw</td>
+            <td>$2.19</td>
+          </tr>
+          <tr>
+            <td>Canary</td>
+            <td>$11.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Place your orders here! You know you want to.</p>
+      <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
+        First Name: <input type="text" name="firstname">
+        <br>
+      <!-- </form>
+      <form> -->
+        Last Name: <input type="text" name="lastname">
+        <br>
+      <!-- </form>
+      <form> -->
+        Melon Type:
+          <select name="melontype">
+              <option value="watermelon">Watermelon</option>
+              <option value="honeydew">Honeydew</option>
+              <option value="canteloupe">Canteloupe</option>
+              <option value="crenshaw">Crenshaw</option>
+              <option value="canary">Canary</option>
+          </select>
+      <!-- </form>
+      <form> -->
+        <br>
+        Quantity*: <input type="text" name="quantity">
+      <!-- </form>
+      <form> -->
+        <br>
+        Delivery Time:
+        <input type="radio" name="ampm" value="am">AM
+        <input type="radio" name="ampm" value="pm">PM
+        <input type="radio" name="ampm" value="wat">WAT
+      <!-- </form>
+      <form> -->
+        <br>
+        Returning Customer:
+        <input type="radio" name="returning" value="yes">yes
+        <input type="radio" name="returning" value="no">no
+      <!-- </form>
+      <form> -->
+        <br>
+        Stats:
+        <input type="checkbox" name="animal" value="dog">Dog
+        <input type="checkbox" name="animal" value="cat">Cat
+        <input type="checkbox" name="animal" value="hedgehog">Hedgehog
+        <input type="checkbox" name="animal" value="balloonicorn">Balloonicorn
+        <input type="checkbox" name="animal" value="yak">Yak
+      <!-- </form> -->
+      <!-- <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST"> -->
+        <br>
+        <input type="submit">
+      </form>
+    <footer>
+      <p>*Quantities given are by the flat.</p>
+    </footer>
+  </body>
